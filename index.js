@@ -20,9 +20,19 @@ app.use(auth.session)
 app.use(auth.router)
 
 
+//Gate Keeper Must login to access any route below this code
+app.use((req,res,next)=>{
+  if (!req.session.uid) {
+    return res.status(401).send({
+      error: 'please login to continue'
+    })
+  }
+  next()
+})
 
 //YOUR ROUTES HERE!!!!!!
-
+var ship = require('./server-assets/routes/ships')
+app.use(ship.router)
 
 
 //Catch all
