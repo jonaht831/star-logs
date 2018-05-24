@@ -30,9 +30,8 @@ Some things we need to have
 Relationships are as follows
   - Users have an assigment (shipId)
   - Logs will have an author (userID) and a ship (shipID)
-  - Comments will have a log they are attached to (logId)
+  - Comments will have a log they are attached to (logId) and author (userID)
  
 Data Rules
   - Users can only see logs, and create logs if they are logged in
   - Only the author or an Admiral can edit logs
-  - Anyone can comment on any log, however their name is attached to the comment
