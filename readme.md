@@ -14,7 +14,7 @@ We need you to build a new system for starfleet to use to keep track of the capt
 
 Some things we need to have
   - Users must be able to login with a username and password
-  - When a user registers with starfleet they will also have to set a rank and ship which they are a part of
+  - When a user registers with starfleet they will also have to set a ship which they are a part of
   - After loging in they are provided with thier ships logs
   - Any role can create a log, and any user can comment on any log
   
