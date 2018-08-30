@@ -15,9 +15,8 @@ We need you to build a new system for starfleet to use to keep track of the capt
 Some things we need to have
   - Users must be able to login with a username and password
   - When a user registers with starfleet they will also have to set a rank and ship which they are a part of
-  - After loging in they are provided with thier ships logs (if they are an Admiral they can see all ships logs)
+  - After loging in they are provided with thier ships logs
   - Any role can create a log, and any user can comment on any log
-  
   
  ### What this means for you
  
@@ -34,4 +33,4 @@ Relationships are as follows
  
 Data Rules
   - Users can only see logs, and create logs if they are logged in
-  - Only the author or an Admiral can edit logs
+  - Only the author can edit logs

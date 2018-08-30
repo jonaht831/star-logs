@@ -6,13 +6,13 @@ var store = new mongoStore({
   collection: "Sessions"
 });
 
-store.on("error", function(err) {
+store.on("error", function (err) {
   console.log("[SESSION ERROR]", err);
 });
 
 // @ts-ignore
 var session = expressSession({
-  secret: "wh0000000 l<3ves a pineapple in the SKY DIAMONtes!!!", //CHANGE ME!!!!
+  secret: "Th3se are The V07&ges under THe Se4!!!", //CHANGE ME!!!!
   cookie: {
     maxAge: 1000 * 60 * 60 * 24 * 7 * 52 * 2,
   },
