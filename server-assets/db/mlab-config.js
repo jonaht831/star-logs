@@ -3,13 +3,13 @@ var connectionString = 'mongodb://student:student@ds151207.mlab.com:51207/bcw-ju
 var connection = mongoose.connection
 
 
-mongoose.connect(connectionString)
+mongoose.connect(connectionString, { useMongoClient: true })
 
-connection.on('error', err=>{
+connection.on('error', err => {
   console.log('ERROR FROM DATABASE: ', err)
 })
 
 
-connection.once('open', ()=>{
+connection.once('open', () => {
   console.log('Connected to Database')
 })

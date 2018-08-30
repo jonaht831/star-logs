@@ -12,7 +12,7 @@ store.on("error", function (err) {
 
 // @ts-ignore
 var session = expressSession({
-  secret: "Th3se are The V07&ges under THe Se4!!!", //CHANGE ME!!!!
+  secret: "Th3se @Re ThE V07&ges undeR THe Se4!!!", //CHANGE ME!!!!
   cookie: {
     maxAge: 1000 * 60 * 60 * 24 * 7 * 52 * 2,
   },
