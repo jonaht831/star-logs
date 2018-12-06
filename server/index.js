@@ -44,6 +44,9 @@ server.use((req, res, next) => {
 var ship = require('./server-assets/routes/ships')
 server.use(ship.router)
 
+var log = require('./server-assets/routes/logs')
+server.use(log.router)
+
 
 //Catch all
 
